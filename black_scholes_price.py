@@ -20,7 +20,7 @@ s_0=100; sigma = 0.2
 # Define the sampling class to generate fBM and prices & volatility according to Heston model
 class model_prices():
     """
-    Euler-Mayorama scheme for computing prices according to Black-Scholes model.
+    Euler-Maruyama scheme for computing prices according to Black-Scholes model.
     
     Parameters
     ----------
