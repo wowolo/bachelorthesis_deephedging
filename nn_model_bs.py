@@ -43,8 +43,7 @@ class neural_network():
         Parameters
         ----------
         eps : Epsilons in proportional transactions costs.
-        H : Hurst paramenter for fBM driving log-volatility.
-        L : Number of hidden layers + 1 (<- output layer).
+        L : Indicates that we have 2L-2 hidden layers.
         num_nodes : Number of nodes of dense layers.
         num_sub : Number of sub intervals for computation of prices/volatilities (see chacko_viceira_price.py).
         train_samples : Number of samples.

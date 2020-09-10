@@ -13,7 +13,7 @@ from fbm import FBM
 
 
 #  (used for pricing in model_prices)
-v_0=0.04; s_0=100; x_0=np.log(v_0); kappa=0.5; theta=x_0; mu=0.1; eta=0.001; 
+v_0=0.04; s_0=100; x_0=np.log(v_0); kappa=0.5; theta=x_0; mu=0.01; eta=0.001; 
  
 
     
@@ -62,7 +62,7 @@ class model_prices():
         price_holder=[[] for i in range(self.n+1)]   # i-th element (shape=(train_samples,d)) i.e., sampled prices at time t_i 
         for j in range(self.train_samples):
             incr_1 = self.BMsampler.fbm()        #Brownian motion
-            incr_2 = self.fBMsampler.fbm()     #Fractional Brownian motion 
+            incr_2 = self.fBMsampler.fbm()     #Fractional brownian motion 
             # define price_1 and volativity iteratively by Euler scheme
             price_1 = [s_0]
             vol = [v_0]

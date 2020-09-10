@@ -66,7 +66,9 @@ class plotting_():
         indiff_prices = [] 
         
         with open('nn_status.txt','w+') as f_status:
-            f_status.write('Start experiment:\n')
+            f_status.write('Start experiment...\n')
+        with open('results.txt', 'w+') as f_result:
+                f_result.write('We are at the start of the experiment. No results yet.')
         
         epsilons = [2**-(i+5) for i in range(self.num_epsilons,0,-1)]    # epsilon=2^-(i+5) for i=1,...,num_epsilons
         for i, eps in enumerate(epsilons):

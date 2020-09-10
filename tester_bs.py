@@ -12,5 +12,5 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 from plotter_bs import plotting_
 
 
-L=3; num_nodes=16; num_sub=4; train_samples=5*10**6
-do = plotting_(3,L,num_nodes,num_sub,train_samples)
+num_eps = 5; L=3; num_nodes=16; num_sub=4; train_samples=3*10**5
+do = plotting_(num_eps,L,num_nodes,num_sub,train_samples)

@@ -4,7 +4,7 @@ Created on Tue Jul 14 10:42:56 2020
 
 @author: Sebastian
 
-Neural network with architecture according to parameters (L,num_nodes), (optional) grid_search for hyperparameters,
+Neural network with architecture according to parameters (L,num_nodes)
 and prediction on independent train set.
 
 """
