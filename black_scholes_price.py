@@ -26,7 +26,6 @@ class model_prices():
     ----------
     n : Integer, number of time steps.
     T : Time horizon (n/365)
-    H : Hurst parameter in (0,1).
     num_sub : Number of equidistant points between trading dates for Euler Mayorama computations.
     train_samples : Amount of samples to create.
     
