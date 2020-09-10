@@ -20,7 +20,7 @@ v_0=0.04; s_0=100; x_0=np.log(v_0); kappa=0.5; theta=x_0; mu=0.1; eta=0.001;
 # Define the sampling class to generate fBM and prices & volatility according to Heston model
 class model_prices():
     """
-    Euler-Mayorama scheme for computing prices and volatilities according to Chacko-Viceira model.
+    Euler-Maruyama scheme for computing prices and volatilities according to Chacko-Viceira model.
     
     Parameters
     ----------
